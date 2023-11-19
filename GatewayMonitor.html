@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html  lang="pt-br" >
+  <head>
+  <title>Gateway Monitor</title>
+  <meta http-equiv="refresh" content="60"/>
+  <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet"/>
+  <link media="all" type="text/css" rel="stylesheet" href="css/index.css"/>
+  <link media="all" type="text/css" rel="stylesheet" href="css/status.css"/>
+  </head>
+  
+
+
+  
+
+<body>
+  <header>
+    <div>
+      
+    <div id="MyClockDisplay" class="clock"></div>
+    
+    </div>
+    <img id="Logo" src="https://www.defensoria.es.def.br/wp-content/uploads/2021/10/cropped-logo.png"></img>
+  </header>
+  
+
+    
+  
+
+  
+
+  <div>
+    <ul class="uni2" data-bind="foreach:completeServers">
+      <li>
+        <div class="product" data-bind="css:status" onclick="divClick(this);">
+          <span class="UnidName" href="#" data-bind="text:server,attr:{href: 'http://'+server},">IP</span>
+          
+          
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <script type="text/javascript" src="js/clock.js"></script>
+  <script type='text/javascript' src='https://knockoutjs.com/downloads/knockout-3.5.1.js'></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="js/status.js"></script>
+  
+
+</body>
+
+</html>

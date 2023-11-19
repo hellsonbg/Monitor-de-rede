@@ -1,0 +1,13 @@
+﻿
+.ON {
+  color:green;
+  box-shadow: 0 0 0 2px green; 
+}
+.checando,.unchecked {
+  color:#FF8C00;
+  box-shadow: 0 0 0 2px #FF8C00;
+}
+.timeout {
+color:red;
+box-shadow: 0 0 0 2px red;
+}

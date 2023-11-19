@@ -1,0 +1,174 @@
+body {
+  font-family: 'Source Sans Pro';
+  background-color: #161626ff;
+  margin: 0;
+  color: white;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto 60% 40%;
+  grid-template-areas:
+    "header"
+    "body"
+    "footer";
+  overflow: hidden;
+}
+
+
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.8em;
+  font-weight: 700;
+}
+
+.UnidName {
+  margin-top: 1vh;
+  background: #1f2534ff;
+  text-decoration: none;
+  color: white;
+  font-size: 1.6em;
+  font-weight: 600;
+}
+
+
+
+
+
+.product {
+  display: inline-block;
+  width: 15vw;
+  height: 6vh;
+  
+  border-radius: 5px;
+  background-color: #161626ff;
+  
+}
+
+img {
+  height: 10vh;
+  
+ 
+
+}
+
+header {
+  display: flex;
+  background: black;
+  height: 11vh;
+  width: 100%;
+  position: absolute;
+  justify-items: center;
+  justify-content: space-between;
+  align-items: center;
+  
+  
+  
+}
+.clock {
+  font-size: 50px;
+  font-weight: 900;
+  text-align: center;
+  width: min-content;
+  color: #ffffff;
+  padding-left: 1vw;
+}
+
+.container-header{
+  display: grid;
+
+
+
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 66% auto;
+  padding: 4em 1em;
+}
+
+
+
+ul {
+  display: grid;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: repeat(2, auto);
+  border-color: red;
+  border-bottom-width: medium;
+}
+
+.banner {
+  display: grid;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border-color: red;
+  border-bottom-width: medium;
+  background-color: #1f1f31ff;
+}
+
+ul li {
+  padding: 1em;
+  color: white;
+  text-align: center;
+  margin-bottom: 0em;
+  margin-top: 0px;
+}
+
+ul li span {
+  margin-top: 45px;
+  display: block;
+  font-size: 1.6em;
+  margin-bottom: 0em;
+  color: white;
+  text-align: center;
+}
+
+.uni1 {
+  background-color: #161626ff;
+}
+
+.uni2 {
+  background-color: #1f1f31ff;
+  margin-bottom: 0em;
+  padding: 15vh ;
+}
+
+
+@media only screen and (max-width: 480px) {
+
+  body {
+    grid-template-areas:
+      "header"
+      "header2"
+      "footer"
+      "body"
+      "weatherwidget-io"
+    ;
+  }
+
+  ul,
+  .container {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+
+  .container {
+    text-align: center;
+  }
+
+  .header2 {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+
+  .banner {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+
+
+}
